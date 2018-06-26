@@ -1,0 +1,137 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Kcrab.Master" AutoEventWireup="true" CodeBehind="hattyuurireki.aspx.cs" Inherits="WebApplication2.WebForm9" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style2 {
+            width: 59px;
+        }
+        .auto-style3 {
+            width: 440px;
+        }
+        .auto-style4 {
+            width: 100%;
+            height: 95px;
+        }
+        .auto-style5 {
+            margin-bottom: 0px;
+        }
+        .auto-style7 {
+            margin-left: 538px;
+        }
+        .auto-style8 {
+            width: 207px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <p>
+        <br />
+        <asp:Label ID="Label2" runat="server" Font-Names="HG丸ｺﾞｼｯｸM-PRO" Font-Size="XX-Large" Text="発注履歴"></asp:Label>
+    </p>
+    <p>
+        　<table style="width: 100%;">
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button3" runat="server" CssClass="auto-style7" Font-Names="游ゴシック" Height="30px" Text="更新" Width="127px" />
+                </td>
+            </tr>
+        </table>
+        　<br />
+        <table class="auto-style4">
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label3" runat="server" Font-Names="游ゴシック" Text="発注日"></asp:Label>
+                </td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
+                    ～<asp:TextBox ID="TextBox2" runat="server" Width="150px"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label5" runat="server" Text="注文番号"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox3_TextChanged" Width="150px"></asp:TextBox>
+                    ～<asp:TextBox ID="TextBox4" runat="server" CssClass="auto-style5" Width="150px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label4" runat="server" Font-Names="游ゴシック" Text="品番"></asp:Label>
+                </td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="TextBox5" runat="server" Width="300px"></asp:TextBox>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" Font-Names="游ゴシック" Height="30px" Text="検索" Width="150px" />
+&nbsp;
+                    <asp:Button ID="Button2" runat="server" Font-Names="游ゴシック" Height="30px" Text="リセット" Width="150px" />
+                </td>
+            </tr>
+        </table>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zyutyuConnectionString %>" SelectCommand="SELECT * FROM [zyutyu]"></asp:SqlDataSource>
+    </p>
+    <p>
+        <p>
+        </p>
+    </p>
+    <table style="width:100%;">
+        <tr>
+            <td class="auto-style8" rowspan="4">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                    <Columns>
+                        <asp:BoundField DataField="Order_Id" HeaderText="Order_Id" SortExpression="Order_Id" />
+                        <asp:BoundField DataField="Datetime" HeaderText="Datetime" SortExpression="Datetime" />
+                        <asp:BoundField DataField="Shop_Id" HeaderText="Shop_Id" SortExpression="Shop_Id" />
+                        <asp:BoundField DataField="Shop_Name" HeaderText="Shop_Name" SortExpression="Shop_Name" />
+                        <asp:BoundField DataField="Member" HeaderText="Member" SortExpression="Member" />
+                        <asp:BoundField DataField="Item_Id" HeaderText="Item_Id" SortExpression="Item_Id" />
+                        <asp:BoundField DataField="Item_Name" HeaderText="Item_Name" SortExpression="Item_Name" />
+                        <asp:BoundField DataField="Order_Item" HeaderText="Order_Item" SortExpression="Order_Item" />
+                    </Columns>
+                </asp:GridView>
+            </td>
+            <td>
+                <asp:DropDownList ID="DropDownList1" runat="server">
+                </asp:DropDownList>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </table>
+    <p>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<asp:HyperLink ID="HyperLink2" runat="server" Font-Names="游ゴシック">発注画面へ</asp:HyperLink>
+    <p>
+    </p>
+</asp:Content>
