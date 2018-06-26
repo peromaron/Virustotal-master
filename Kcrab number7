@@ -1,0 +1,62 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Kcrab.Master" AutoEventWireup="true" CodeBehind="kokyakuzyouhouhenkoukanryou.aspx.cs" Inherits="WebApplication2.WebForm3" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    </asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br />
+    <asp:Label ID="Label1" runat="server" CssClass="auto-style1" Font-Names="HG丸ｺﾞｼｯｸM-PRO" Font-Size="X-Large" Text="顧客情報変更"></asp:Label>
+    &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label2" runat="server" CssClass="auto-style2" Font-Names="游ゴシック" Font-Size="Medium" Text="下記の内容で変更してよろしいですか"></asp:Label>
+    <p>
+    </p>
+    <p>
+        <asp:Label ID="Label3" runat="server" CssClass="auto-style3" Font-Names="游ゴシック" Text="◇お名前"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="CusinfoName1Txt" runat="server" CssClass="auto-style4" Font-Names="游ゴシック" Text="姓"></asp:Label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="CusinfoName2Txt" runat="server" CssClass="auto-style5" Font-Names="游ゴシック" Text="名"></asp:Label>
+    </p>
+    <asp:Label ID="Label6" runat="server" CssClass="auto-style8" Font-Names="游ゴシック" Text="◇フリガナ"></asp:Label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="CusinfoFurigana1Txt" runat="server" CssClass="auto-style6" Font-Names="游ゴシック" Text="姓"></asp:Label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="CusinfoFurigana2Txt" runat="server" CssClass="auto-style9" Font-Names="游ゴシック" Text="名"></asp:Label>
+        <br />
+    <br />
+        <asp:Label ID="Label9" runat="server" CssClass="auto-style10" Font-Names="游ゴシック" Text="◇パスワード"></asp:Label>
+    <asp:Label ID="CusinfoPwTxt" runat="server" CssClass="auto-style16" Font-Names="游ゴシック"></asp:Label>
+    <p>
+        <asp:Label ID="Label8" runat="server" CssClass="auto-style7" Font-Names="游ゴシック" Text="◇パスワード再入力"></asp:Label>
+        <asp:Label ID="CusinfoPw2Txt" runat="server" CssClass="auto-style17" Font-Names="游ゴシック"></asp:Label>
+    </p>
+    <p>
+        <asp:Label ID="Label11" runat="server" CssClass="auto-style11" Font-Names="游ゴシック" Text="◇電話番号"></asp:Label>
+    <asp:Label ID="CusinfoTelTxt" runat="server" CssClass="auto-style18" Font-Names="游ゴシック"></asp:Label>
+    </p>
+    <p>
+        <asp:Label ID="Label12" runat="server" CssClass="auto-style12" Font-Names="游ゴシック" Text="◇メールアドレス"></asp:Label>
+        <asp:Label ID="CusinfoMailTxt" runat="server" CssClass="auto-style19" Font-Names="游ゴシック"></asp:Label>
+    </p>
+    <p>
+        <asp:Label ID="Label13" runat="server" CssClass="auto-style13" Font-Names="游ゴシック" Text="◇住所"></asp:Label>
+    <asp:Label ID="CusinfoAddTxt" runat="server" CssClass="auto-style20" Font-Names="游ゴシック"></asp:Label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="CusinfoChkBtn" runat="server" CssClass="auto-style15" Font-Names="游ゴシック" Font-Size="Large" Text="登録" Width="148px" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="CusinfoBcBtn" runat="server" CssClass="auto-style21" Font-Names="游ゴシック" Text="訂正" Width="97px" />
+    &nbsp;</p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+</asp:Content>
+   
