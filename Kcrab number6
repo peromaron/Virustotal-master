@@ -1,0 +1,234 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Kcrab.Master" AutoEventWireup="true" CodeBehind="kokyakuzyouhouhenkou.aspx.cs" Inherits="WebApplication2.WebForm2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style2 {
+            height: 28px;
+        }
+        .auto-style3 {
+            height: 20px;
+        }
+        .auto-style4 {
+            height: 18px;
+        }
+        .auto-style5 {
+            height: 16px;
+        }
+        .auto-style6 {
+            height: 15px;
+        }
+        .auto-style7 {
+            height: 14px;
+        }
+        .auto-style8 {
+            height: 13px;
+        }
+        .auto-style9 {
+            height: 12px;
+        }
+        .auto-style10 {
+            height: 11px;
+        }
+        .auto-style11 {
+            height: 10px;
+        }
+        .auto-style12 {
+            height: 125px;
+            width: 727px;
+        }
+        .auto-style13 {
+            height: 9px;
+        }
+        .auto-style14 {
+            height: 8px;
+        }
+        .auto-style17 {
+            height: 27px;
+        }
+        .auto-style18 {
+            height: 21px;
+        }
+        .auto-style19 {
+            height: 28px;
+            width: 244px;
+        }
+        .auto-style20 {
+            height: 20px;
+            width: 266px;
+        }
+        .auto-style21 {
+            height: 21px;
+            width: 266px;
+        }
+        .auto-style23 {
+            height: 28px;
+            width: 243px;
+        }
+        .auto-style24 {
+            height: 27px;
+            width: 243px;
+        }
+        .auto-style25 {
+            height: 28px;
+            width: 242px;
+        }
+        .auto-style26 {
+            height: 27px;
+            width: 242px;
+        }
+        .auto-style27 {
+            height: 28px;
+            width: 241px;
+        }
+        .auto-style28 {
+            height: 27px;
+            width: 241px;
+        }
+        .auto-style29 {
+            height: 28px;
+            width: 240px;
+        }
+        .auto-style30 {
+            height: 27px;
+            width: 240px;
+        }
+        .auto-style31 {
+            height: 28px;
+            width: 239px;
+        }
+        .auto-style32 {
+            height: 28px;
+            width: 266px;
+        }
+        .auto-style33 {
+            height: 27px;
+            width: 266px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+        <div class="auto-style1">
+            <table class="auto-style12">
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Font-Names="HG丸ｺﾞｼｯｸM-PRO" Font-Size="X-Large" Text="顧客情報変更"></asp:Label>
+                    </td>
+                    <td class="auto-style32"></td>
+                    <td class="auto-style2">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style20"></td>
+                    <td class="auto-style3"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style18">
+                        <br />
+                        <asp:Label ID="Label2" runat="server" CssClass="auto-style5" Font-Names="游ゴシック" Text="◇お名前"></asp:Label>
+                        <br />
+                        </td>
+                    <td class="auto-style21">
+                        <asp:Label ID="CusinfoName1Txt" runat="server" CssClass="auto-style6" Font-Names="游ゴシック" Text="姓"></asp:Label>
+                        <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style30"></asp:TextBox>
+                        </td>
+                    <td class="auto-style18">
+                        <asp:Label ID="CusinfoName2Txt" runat="server" CssClass="auto-style7" Font-Names="游ゴシック" Text="名"></asp:Label>
+                        <asp:TextBox ID="TextBox3" runat="server" CssClass="auto-style23"></asp:TextBox>
+                    </td>
+               </tr>
+                <tr>
+                    <td class="auto-style17">
+                        <br />
+                        <asp:Label ID="Label5" runat="server" CssClass="auto-style8" Font-Names="游ゴシック" Text="◇フリガナ"></asp:Label>
+                        <br />
+                    </td>
+                    <td class="auto-style33">
+                        <asp:Label ID="CusinfoFurigana1Txt" runat="server" CssClass="auto-style9" Font-Names="游ゴシック" Text="姓"></asp:Label>
+                        <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style31"></asp:TextBox>
+                        </td>
+                    <td class="auto-style17">
+                        <asp:Label ID="CusinfoFurigana2Txt" runat="server" CssClass="auto-style10" Font-Names="游ゴシック" Text="名"></asp:Label>
+                        <asp:TextBox ID="TextBox4" runat="server" CssClass="auto-style24"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br />
+                        <asp:Label ID="Label8" runat="server" CssClass="auto-style11" Font-Names="游ゴシック" Text="◇新パスワード"></asp:Label>
+                        <br />
+                    </td>
+                    <td colspan="2">
+                        <asp:TextBox ID="TextBox5" runat="server" CssClass="auto-style25" Width="350px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br />
+                        <asp:Label ID="Label11" runat="server" CssClass="auto-style14" Font-Names="游ゴシック" Text="◇電話番号"></asp:Label>
+                        <br />
+                    </td>
+                    <td colspan="2">
+                        <asp:TextBox ID="TextBox6" runat="server" CssClass="auto-style26" Width="350px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br />
+                        <asp:Label ID="Label10" runat="server" CssClass="auto-style13" Font-Names="游ゴシック" Text="◇新パスワード再入力"></asp:Label>
+                        <br />
+                    </td>
+                    <td colspan="2">
+                        <asp:TextBox ID="TextBox7" runat="server" CssClass="auto-style27" Width="350px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br />
+                        <asp:Label ID="Label14" runat="server" CssClass="auto-style17" Font-Names="游ゴシック" Text="◇メールアドレス"></asp:Label>
+                        <br />
+                    </td>
+                    <td colspan="2">
+                        <asp:TextBox ID="TextBox8" runat="server" CssClass="auto-style28" Width="350px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br />
+                        <asp:Label ID="Label16" runat="server" CssClass="auto-style19" Font-Names="游ゴシック" Text="◇住所"></asp:Label>
+                        <br />
+                    </td>
+                    <td colspan="2">
+                        <asp:TextBox ID="TextBox9" runat="server" CssClass="auto-style29" Width="350px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                        <asp:Button ID="Button1" runat="server" Font-Names="游ゴシック" Font-Size="X-Large" Text="確認画面へ" Height="34px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                </tr>
+                </table>
+        </div>
+
+<p>
+    　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p>
+<p>
+    &nbsp;</p>
+<p>
+    <br />
+</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+       
+       
+</asp:Content>
