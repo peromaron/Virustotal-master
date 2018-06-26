@@ -1,0 +1,38 @@
+Page Title="" Language="C#" MasterPageFile="~/Kcrab.Master" AutoEventWireup="true" CodeBehind="hattyuukakunin.aspx.cs" Inherits="WebApplication2.WebForm6" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    　　　　　<p>
+        &nbsp;</p>
+    <p>
+        <asp:Label ID="Label2" runat="server" Font-Names="HG丸ｺﾞｼｯｸM-PRO" Text="発注確認" Font-Size="XX-Large"></asp:Label>
+    </p>
+    <p>
+        　　　　　　<asp:Label ID="Label1" runat="server" Font-Names="游ゴシック" Text="ご購入日："></asp:Label>
+    </p>
+    　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<br />
+    <br />
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cartConnectionString %>" SelectCommand="SELECT * FROM [cart]"></asp:SqlDataSource>
+    <br />
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+        <Columns>
+            <asp:BoundField DataField="Item_Id" HeaderText="商品ID" SortExpression="Item_Id" />
+            <asp:BoundField DataField="Item_Name" HeaderText="商品名" SortExpression="Item_Name" />
+            <asp:BoundField DataField="Cost" HeaderText="単価" SortExpression="Cost" />
+            <asp:BoundField DataField="Order_Item" HeaderText="注文数" SortExpression="Order_Item" />
+        </Columns>
+    </asp:GridView>
+    <br />
+    <br />
+    <br />
+    <br />
+    　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<asp:Button ID="Button3" runat="server" Height="71px" Text="発注確定" Width="170px" />
+&nbsp;<br />
+    　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<p>
+        <asp:Button ID="Button2" runat="server" Font-Names="游ゴシック" Text="発注画面に戻る" />
+        　　　</p>
+    <p>
+    </p>
+    <p>
+    </p>
+</asp:Content>
