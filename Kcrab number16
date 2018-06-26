@@ -1,0 +1,112 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="顧客情報完了登録PG.aspx.cs" Inherits="development.顧客情報完了登録PG" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 62px;
+            position: absolute;
+            top: 70px;
+            left: 8px;
+            width: 100%;
+            z-index: 1;
+        }
+        .auto-style2 {
+            position: absolute;
+            top: 107px;
+            left: 488px;
+            z-index: 1;
+            width: 305px;
+            height: 18px;
+        }
+        .auto-style3 {
+            position: absolute;
+            top: 197px;
+            left: 584px;
+            z-index: 1;
+            width: 114px;
+        }
+        .auto-style4 {
+            height: 20px;
+        }
+        .auto-style5 {
+            height: 514px;
+            width: 1277px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" class="auto-style5">
+        <table class="auto-style1">
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Font-Size="XX-Large" Text="顧客情報登録完了"></asp:Label>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:HyperLink ID="CusinfoHisHypl" runat="server" CssClass="auto-style3">受注履歴へ</asp:HyperLink>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
