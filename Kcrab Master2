@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="WebApplication2.Site2" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kcrab2.Master.cs" Inherits="WebApplication2.Site3" %>
 
 <!DOCTYPE html>
 
@@ -12,9 +12,15 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <br />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    <br />
+                </p>
             </asp:ContentPlaceHolder>
         </div>
     </form>
-</body>
+    <p style="language: ja; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: center; direction: ltr; unicode-bidi: embed; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging; background-color: #FFD966; font-family: HG丸ｺﾞｼｯｸM-PRO;">
+            お問い合わせ</p>
+        </body>
 </html>
