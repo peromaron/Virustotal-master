@@ -1,0 +1,209 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="顧客リスト登録.aspx.cs" Inherits="Kcrab.WebForm4" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            position: absolute;
+            top: 48px;
+            left: 47px;
+            z-index: 1;
+        }
+        .auto-style2 {
+            position: absolute;
+            top: 133px;
+            left: 423px;
+            z-index: 1;
+        }
+        .auto-style3 {
+            position: absolute;
+            top: 133px;
+            left: 541px;
+            z-index: 1;
+        }
+        .auto-style4 {
+            position: absolute;
+            top: 133px;
+            left: 562px;
+            z-index: 1;
+        }
+        .auto-style5 {
+            position: absolute;
+            top: 133px;
+            left: 737px;
+            z-index: 1;
+        }
+        .auto-style6 {
+            position: absolute;
+            top: 132px;
+            left: 757px;
+            z-index: 1;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 178px;
+            left: 423px;
+            z-index: 1;
+            bottom: 783px;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 179px;
+            left: 541px;
+            z-index: 1;
+        }
+        .auto-style9 {
+            position: absolute;
+            top: 177px;
+            left: 559px;
+            z-index: 1;
+        }
+        .auto-style10 {
+            position: absolute;
+            top: 177px;
+            left: 737px;
+            z-index: 1;
+        }
+        .auto-style11 {
+            position: absolute;
+            top: 177px;
+            left: 757px;
+            z-index: 1;
+        }
+        .auto-style12 {
+            position: absolute;
+            top: 224px;
+            left: 423px;
+            z-index: 1;
+        }
+        .auto-style13 {
+            position: absolute;
+            top: 222px;
+            left: 559px;
+            z-index: 1;
+            width: 348px;
+        }
+        .auto-style14 {
+            position: absolute;
+            top: 269px;
+            left: 423px;
+            z-index: 1;
+        }
+        .auto-style15 {
+            position: absolute;
+            top: 267px;
+            left: 558px;
+            z-index: 1;
+            width: 348px;
+        }
+        .auto-style16 {
+            position: absolute;
+            top: 315px;
+            left: 422px;
+            z-index: 1;
+        }
+        .auto-style17 {
+            position: absolute;
+            top: 314px;
+            left: 559px;
+            z-index: 1;
+            width: 346px;
+        }
+        .auto-style18 {
+            position: absolute;
+            top: 357px;
+            left: 422px;
+            z-index: 1;
+        }
+        .auto-style19 {
+            position: absolute;
+            top: 357px;
+            left: 558px;
+            z-index: 1;
+            width: 348px;
+        }
+        .auto-style20 {
+            position: absolute;
+            top: 406px;
+            left: 559px;
+            z-index: 1;
+            width: 345px;
+        }
+        .auto-style21 {
+            position: absolute;
+            top: 408px;
+            left: 422px;
+            z-index: 1;
+        }
+        .auto-style22 {
+            position: absolute;
+            top: 473px;
+            left: 349px;
+            z-index: 1;
+        }
+        .auto-style23 {
+            position: absolute;
+            top: 531px;
+            left: 423px;
+            z-index: 1;
+        }
+        .auto-style24 {
+            position: absolute;
+            top: 530px;
+            left: 558px;
+            z-index: 1;
+            width: 345px;
+        }
+        .auto-style25 {
+            position: absolute;
+            top: 595px;
+            left: 629px;
+            z-index: 1;
+            width: 166px;
+            height: 35px;
+            bottom: 364px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <asp:Label ID="Label1" runat="server" CssClass="auto-style1" Font-Names="HG丸ｺﾞｼｯｸM-PRO" Font-Size="X-Large" Text="顧客リスト登録"></asp:Label>
+        <asp:Label ID="Label2" runat="server" CssClass="auto-style2" Font-Bold="True" Font-Names="游ゴシック" Text="♢お名前"></asp:Label>
+        <asp:Label ID="Label3" runat="server" CssClass="auto-style3" Text="姓"></asp:Label>
+        <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style4"></asp:TextBox>
+        <asp:Label ID="Label4" runat="server" CssClass="auto-style5" Text="名"></asp:Label>
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style6"></asp:TextBox>
+        <asp:Label ID="Label5" runat="server" CssClass="auto-style7" Font-Bold="True" Font-Names="游ゴシック" Text="♢フリガナ"></asp:Label>
+        <asp:Label ID="Label6" runat="server" CssClass="auto-style8" Text="姓"></asp:Label>
+        <asp:TextBox ID="TextBox3" runat="server" CssClass="auto-style9"></asp:TextBox>
+        <asp:Label ID="Label7" runat="server" CssClass="auto-style10" Text="名"></asp:Label>
+        <asp:TextBox ID="TextBox4" runat="server" CssClass="auto-style11"></asp:TextBox>
+        <asp:Label ID="Label8" runat="server" CssClass="auto-style12" Font-Bold="True" Font-Names="游ゴシック" Text="♢住所"></asp:Label>
+        <asp:TextBox ID="TextBox5" runat="server" CssClass="auto-style13"></asp:TextBox>
+        <asp:Label ID="Label9" runat="server" CssClass="auto-style14" Font-Bold="True" Font-Names="游ゴシック" Text="♢店名"></asp:Label>
+        <asp:TextBox ID="TextBox6" runat="server" CssClass="auto-style15"></asp:TextBox>
+        <asp:Label ID="Label10" runat="server" CssClass="auto-style16" Font-Bold="True" Font-Names="游ゴシック" Text="♢電話番号"></asp:Label>
+        <asp:TextBox ID="TextBox7" runat="server" CssClass="auto-style17"></asp:TextBox>
+        <asp:Label ID="Label11" runat="server" CssClass="auto-style18" Font-Bold="True" Font-Names="游ゴシック" Text="♢メールアドレス"></asp:Label>
+        <asp:TextBox ID="TextBox8" runat="server" CssClass="auto-style19"></asp:TextBox>
+        <asp:TextBox ID="TextBox9" runat="server" CssClass="auto-style20"></asp:TextBox>
+        <asp:Label ID="Label12" runat="server" CssClass="auto-style21" Font-Bold="True" Font-Names="游ゴシック" Text="♢再入力"></asp:Label>
+        <asp:Label ID="Label13" runat="server" CssClass="auto-style22" Text="/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/"></asp:Label>
+        <asp:Label ID="Label14" runat="server" CssClass="auto-style23" Font-Bold="True" Font-Names="游ゴシック" Text="♢担当営業者ID"></asp:Label>
+        <asp:TextBox ID="TextBox10" runat="server" CssClass="auto-style24"></asp:TextBox>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="Button1" runat="server" BorderStyle="None" CssClass="auto-style25" Font-Bold="True" Font-Names="游ゴシック" Text="確認画面へ" />
+        </p>
+    </form>
+</body>
+</html>
