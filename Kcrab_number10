@@ -1,0 +1,27 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login_Page.aspx.cs" Inherits="Kcrab.Login_Page" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>自由が丘食品</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:TextBox ID="TextBox1" runat="server" style="z-index: 1; left: 531px; top: 346px; position: absolute; width: 275px;"></asp:TextBox>
+        <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 505px; top: 344px; position: absolute" Text="ID" Font-Bold="True" Font-Names="游ゴシック"></asp:Label>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/図1.png" style="z-index: -1; left: 10px; top: -29px; position: absolute; height: 906px; width: 1389px" />
+        <asp:TextBox ID="TextBox2" runat="server" style="z-index: 1; left: 530px; top: 406px; position: absolute; width: 275px;"></asp:TextBox>
+        <asp:Label ID="Label2" runat="server" style="z-index: 1; left: 442px; top: 404px; position: absolute" Text="パスワード" Font-Bold="True" Font-Names="游ゴシック"></asp:Label>
+            <asp:CheckBox ID="CheckBox1" runat="server" Font-Names="游ゴシック" Font-Size="Medium" style="z-index: 1; left: 559px; top: 453px; position: absolute" Text="ID・パスワードを保存する" />
+        <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Names="游ゴシック" style="z-index: 1; left: 608px; top: 539px; position: absolute; height: 42px; width: 120px" Text="ログイン" BorderStyle="None" />
+        <asp:Label ID="Label3" runat="server" Font-Size="XX-Large" style="z-index: 1; left: 564px; top: 194px; position: absolute; height: 79px; width: 417px" Text="自由が丘食品" Font-Names="HG丸ｺﾞｼｯｸM-PRO"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Font-Names="游ゴシック" ForeColor="Red" style="z-index: 1; left: 549px; top: 246px; position: absolute" Text="半角英数字で記入してください"></asp:Label>
+        </div>
+        
+        
+    </form>
+</body>
+</html>
