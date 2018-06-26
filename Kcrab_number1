@@ -1,0 +1,80 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Kcrab2.Master" AutoEventWireup="true" CodeBehind="kokyakuroguin.aspx.cs" Inherits="WebApplication2.WebForm11" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+    .auto-style1 {
+        width: 100%;
+        height: 332px;
+    }
+    .auto-style2 {
+            width: 821px;
+        }
+    .auto-style3 {
+            width: 108px;
+        }
+</style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <p>
+    <br />
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style2">
+                　　　　　　　　　　　　　　　　　　　　　　　　　　<asp:Label ID="Label1" runat="server" Font-Names="HG丸ｺﾞｼｯｸM-PRO" Font-Size="40pt" Text="自由が丘食品" EnableTheming="False"></asp:Label>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style2">
+                　　　　　　　　　　　　　　　　　　　　　　　　　　　　<asp:Label ID="Label2" runat="server" Font-Names="游ゴシック" ForeColor="#FF5050" Text="半角英数字で記入してください"></asp:Label>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                &nbsp;</td>
+            <td class="auto-style2">
+                　　　　　　　　　　　　　　　　　　　　　　　　　　<asp:Label ID="Label3" runat="server" Font-Names="游ゴシック" Text="ID"></asp:Label>
+                　　　<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                &nbsp;</td>
+            <td class="auto-style2">
+                　　　　　　　　　　　　　　　　　　　　　　　<asp:Label ID="Label4" runat="server" Font-Names="游ゴシック" Text="パスワード"></asp:Label>
+                　　<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</p>
+<p>
+    　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 　　　 　　　　　　　　　　　<asp:CheckBox ID="CheckBox1" runat="server" Font-Names="游ゴシック" Text="ID・パスワードを保存する" />
+</p>
+<p>
+</p>
+    <p>
+</p>
+<p>
+    　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<asp:Button ID="Button1" runat="server" Font-Names="游ゴシック" Text="ログイン" Width="143px" />
+</p>
+    <p>
+        &nbsp;</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+</asp:Content>
