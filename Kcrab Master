@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kcrab.Master.cs" Inherits="WebApplication2.Site1" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kcrab.Master.cs" Inherits="WebApplication2.Site2" %>
 
 <!DOCTYPE html>
 
@@ -10,50 +10,83 @@
     </asp:ContentPlaceHolder>
     <style type="text/css">
         .auto-style1 {
-            height: 102px;
-            margin-bottom: 0px;
+            height: 22px;
+        }
+        .auto-style2 {
+            width: 324px;
+        }
+        .auto-style4 {
+            text-align: right;
+            width: 621px;
+        }
+        .auto-style6 {
+            text-align: right;
+        }
+        .auto-style7 {
+            height: 22px;
+            width: 621px;
+        }
+        .auto-style8 {
+            height: 69px;
+        }
+        .auto-style9 {
+            width: 100%;
+            height: 46px;
+        }
+        .auto-style10 {
+            width: 100%;
+            height: 65px;
+            margin-top: 0px;
+        }
+        .auto-style11 {
+            text-align: center;
+        }
+        .auto-style12 {
+            width: 15px;
+        }
+        .auto-style13 {
+            height: 22px;
+            width: 15px;
         }
     </style>
 </head>
-<body style="width: 1000px">
-    <form id="form1" runat="server" class="auto-style1" style="background-color: #FFD966">
-        <br />
-        <span style="font-size:10.0pt;font-family:HG丸ｺﾞｼｯｸM-PRO;
-mso-ascii-font-family:HG丸ｺﾞｼｯｸM-PRO;mso-fareast-font-family:HG丸ｺﾞｼｯｸM-PRO;
-mso-bidi-font-family:+mn-cs;mso-bidi-theme-font:minor-bidi;color:#BF9000;
-mso-color-index:7;mso-font-kerning:12.0pt;language:ja;text-combine:letters;
-mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:accent4;
-mso-style-textfill-fill-color:#BF9000;mso-style-textfill-fill-alpha:100.0%;
-mso-style-textfill-fill-colortransforms:lumm=75000">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザー</span><span style="font-size:10.0pt;font-family:HG丸ｺﾞｼｯｸM-PRO;mso-ascii-font-family:HG丸ｺﾞｼｯｸM-PRO;
-mso-fareast-font-family:HG丸ｺﾞｼｯｸM-PRO;mso-bidi-font-family:+mn-cs;mso-bidi-theme-font:
-minor-bidi;color:#BF9000;mso-color-index:7;mso-font-kerning:12.0pt;language:
-en-US;text-combine:letters;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
-accent4;mso-style-textfill-fill-color:#BF9000;mso-style-textfill-fill-alpha:
-100.0%;mso-style-textfill-fill-colortransforms:lumm=75000">ID:</span><asp:Label ID="Label1" runat="server" Font-Names="HG丸ｺﾞｼｯｸM-PRO"></asp:Label>
-        <span style="font-size:10.0pt;font-family:HG丸ｺﾞｼｯｸM-PRO;
-mso-ascii-font-family:HG丸ｺﾞｼｯｸM-PRO;mso-fareast-font-family:HG丸ｺﾞｼｯｸM-PRO;
-mso-bidi-font-family:+mn-cs;mso-bidi-theme-font:minor-bidi;color:#BF9000;
-mso-color-index:7;mso-font-kerning:12.0pt;language:ja;text-combine:letters;
-mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:accent4;
-mso-style-textfill-fill-color:#BF9000;mso-style-textfill-fill-alpha:100.0%;
-mso-style-textfill-fill-colortransforms:lumm=75000">さん　　</span><asp:HyperLink ID="HyperLink1" runat="server" Font-Names="HG丸ｺﾞｼｯｸM-PRO">ログアウト</asp:HyperLink>
-        <p style="language:ja;margin-top:0pt;margin-bottom:0pt;margin-left:0in;
-text-align:left;direction:ltr;unicode-bidi:embed;mso-line-break-override:none;
-word-break:normal;punctuation-wrap:hanging">
-            <span style="font-size: 40px; font-family: HG丸ｺﾞｼｯｸM-PRO; mso-ascii-font-family: HG丸ｺﾞｼｯｸM-PRO; mso-fareast-font-family: HG丸ｺﾞｼｯｸM-PRO; mso-bidi-font-family: +mn-cs; mso-bidi-theme-font: minor-bidi; color: #767171; mso-color-index: 2; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: background2; mso-style-textfill-fill-color: #767171; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=50000">自由が丘食品</span></p>
-        <p style="language:ja;margin-top:0pt;margin-bottom:0pt;margin-left:0in;
-text-align:left;direction:ltr;unicode-bidi:embed;mso-line-break-override:none;
-word-break:normal;punctuation-wrap:hanging">
-            &nbsp;</p>
-        <p style="language:ja;margin-top:0pt;margin-bottom:0pt;margin-left:0in;
-text-align:left;direction:ltr;unicode-bidi:embed;mso-line-break-override:none;
-word-break:normal;punctuation-wrap:hanging">
-            &nbsp;</p>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style8" style="background-color: #FFD966">
+            <table class="auto-style10" style="border-width: 0px; padding: 0px; border-style: inherit; border-color: #FFD966; background-color: #FFD966; white-space: inherit; empty-cells: hide;">
+                <tr>
+                    <td class="auto-style2" rowspan="2" style="background-color: #FFD966; font-size: 40px; font-family: HG丸ｺﾞｼｯｸM-PRO;">
+                        <asp:Label ID="Label1" runat="server" Font-Names="HG丸ｺﾞｼｯｸM-PRO" Font-Size="40pt" Text="自由が丘食品"></asp:Label>
+                    </td>
+                    <td class="auto-style12" style="background-color: #FFD966">&nbsp;</td>
+                    <td class="auto-style4" style="background-color: #FFD966">
+                        <asp:Label ID="Label2" runat="server" Font-Names="游ゴシック" ForeColor="#FF9900" Text="ユーザーID"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Font-Names="游ゴシック"></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Font-Names="游ゴシック" ForeColor="#FF9900" Text="さん"></asp:Label>
+                    </td>
+                    <td class="auto-style6" style="background-color: #FFD966">
+                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="游ゴシック">ログアウト</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style13" style="background-color: #FFD966"></td>
+                    <td class="auto-style7" style="background-color: #FFD966"></td>
+                    <td class="auto-style1" style="background-color: #FFD966"></td>
+                </tr>
+            </table>
+        </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <p>
-                    &nbsp;</p>
+                    <br />
+                </p>
                 <p>
-                    &nbsp;</p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
                 <p>
                 </p>
                 <p>
@@ -63,47 +96,15 @@ word-break:normal;punctuation-wrap:hanging">
                 <p>
                 </p>
             </asp:ContentPlaceHolder>
-        <br />
-        <br />
-        <br />
-        <span style="font-size:10.0pt;font-family:HG丸ｺﾞｼｯｸM-PRO;
-mso-ascii-font-family:HG丸ｺﾞｼｯｸM-PRO;mso-fareast-font-family:HG丸ｺﾞｼｯｸM-PRO;
-mso-bidi-font-family:+mn-cs;mso-bidi-theme-font:minor-bidi;color:#BF9000;
-mso-color-index:7;mso-font-kerning:12.0pt;language:ja;text-combine:letters;
-mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:accent4;
-mso-style-textfill-fill-color:#BF9000;mso-style-textfill-fill-alpha:100.0%;
-mso-style-textfill-fill-colortransforms:lumm=75000">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><p style="language: ja; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: center; direction: ltr; unicode-bidi: embed; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging; background-color: #FFD966; font-family: HG丸ｺﾞｼｯｸM-PRO;">
-            お問い合わせ</p>
-        <p style="language:ja;margin-top:0pt;margin-bottom:0pt;margin-left:0in;
-text-align:left;direction:ltr;unicode-bidi:embed;mso-line-break-override:none;
-word-break:normal;punctuation-wrap:hanging">
-            &nbsp;</p>
-        <p style="language:ja;margin-top:0pt;margin-bottom:0pt;margin-left:0in;
-text-align:left;direction:ltr;unicode-bidi:embed;mso-line-break-override:none;
-word-break:normal;punctuation-wrap:hanging">
-            &nbsp;</p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
+        <table class="auto-style9">
+            <tr>
+                <td style="border-color: #FFD966; background-color: #FFD966">&nbsp;</td>
+                <td class="auto-style11" style="border-color: #FFD966; background-color: #FFD966">
+                    <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="游ゴシック" Font-Size="X-Large">お問い合わせ</asp:HyperLink>
+                </td>
+                <td style="border-color: #FFD966; background-color: #FFD966">&nbsp;</td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
